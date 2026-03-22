@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Step To Begin — Digital Marketing & Web Agency</title>
+  <meta name="description" content="Step To Begin is a full-service digital agency specialising in web creation, digital marketing, SEO, motion design, and brand identity." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="#hero" class="nav-logo">
+          <div class="nav-logo-icon">S</div>
+          <span class="nav-logo-text">Step<span>To</span>Begin</span>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#testimonials">Reviews</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact" class="nav-cta">Get Started</a></li>
+        </ul>
+
+        <div class="nav-mobile-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <canvas id="particleCanvas" style="position:absolute;inset:0;width:100%;height:100%;z-index:1;pointer-events:none;"></canvas>
+
+    <div class="container" style="position:relative;z-index:2;">
+      <div class="hero-grid">
+        <!-- Text side -->
+        <div class="hero-content">
+          <div class="hero-badge" data-aos="fade-up">
+            <span class="hero-badge-dot"></span>
+            Available for new projects
+          </div>
+
+          <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+            <span class="line">We craft</span>
+            <span class="line gradient-text" id="typedText">Digital Marketing</span>
+            <span class="line">that converts.</span>
+          </h1>
+
+          <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+            Step To Begin is a full-service digital agency helping brands grow through strategy, design, and technology — from first click to loyal customer.
+          </p>
+
+          <div class="hero-actions" data-aos="fade-up" data-aos-delay="300">
+            <a href="#contact" class="btn-primary">
+              <i class="fas fa-rocket"></i> Start a project
+            </a>
+            <a href="#portfolio" class="btn-secondary">
+              <i class="fas fa-play-circle"></i> See our work
+            </a>
+          </div>
+
+          <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
+            <div class="hero-stat-item">
+              <div class="hero-stat-number" data-count="150" data-suffix="+">150+</div>
+              <div class="hero-stat-label">Projects delivered</div>
+            </div>
+            <div class="hero-stat-item">
+              <div class="hero-stat-number" data-count="98" data-suffix="%">98%</div>
+              <div class="hero-stat-label">Client satisfaction</div>
+            </div>
+            <div class="hero-stat-item">
+              <div class="hero-stat-number" data-count="8" data-suffix="+">8+</div>
+              <div class="hero-stat-label">Years of expertise</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Visual side -->
+        <div class="hero-visual" data-aos="fade-left" data-aos-delay="200">
+          <div class="hero-lottie-wrap">
+            <!-- Decorative visual placeholder -->
+            <div style="width:100%;aspect-ratio:1;border-radius:28px;background:linear-gradient(135deg,rgba(79,110,247,0.15) 0%,rgba(124,58,237,0.1) 50%,rgba(255,77,109,0.08) 100%);border:1px solid rgba(255,255,255,0.08);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;">
+              <div style="position:absolute;inset:0;background:radial-gradient(circle at 70% 30%,rgba(79,110,247,0.2) 0%,transparent 60%);"></div>
+              <i class="fas fa-chart-line" style="font-size:7rem;background:var(--gradient-text);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;position:relative;z-index:1;"></i>
+            </div>
+
+            <!-- Floating cards -->
+            <div class="floating-card floating-card-1">
+              <div class="fc-icon"><i class="fas fa-arrow-trend-up" style="color:white;"></i></div>
+              <div class="fc-text">
+                <div class="fc-text-title">+240% traffic</div>
+                <div class="fc-text-sub">vs last quarter</div>
+              </div>
+            </div>
+
+            <div class="floating-card floating-card-2">
+              <div class="fc-icon"><i class="fas fa-star" style="color:white;"></i></div>
+              <div class="fc-text">
+                <div class="fc-text-title">5-star rating</div>
+                <div class="fc-text-sub">on Google &amp; Trustpilot</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CLIENTS MARQUEE ===== -->
+  <section id="clients">
+    <p class="clients-label">Trusted by ambitious brands worldwide</p>
+    <div class="marquee-wrapper">
+      <div class="client-item"><i class="fas fa-bolt"></i> Lumina Studio</div>
+      <div class="client-item"><i class="fas fa-leaf"></i> GreenShift</div>
+      <div class="client-item"><i class="fas fa-cube"></i> Nexora Tech</div>
+      <div class="client-item"><i class="fas fa-fire"></i> BlazePulse</div>
+      <div class="client-item"><i class="fas fa-gem"></i> Vistora</div>
+      <div class="client-item"><i class="fas fa-rocket"></i> LaunchPad</div>
+      <div class="client-item"><i class="fas fa-wave-square"></i> SoundMesh</div>
+      <div class="client-item"><i class="fas fa-layer-group"></i> Stackly</div>
+      <!-- Duplicate for seamless loop -->
+      <div class="client-item"><i class="fas fa-bolt"></i> Lumina Studio</div>
+      <div class="client-item"><i class="fas fa-leaf"></i> GreenShift</div>
+      <div class="client-item"><i class="fas fa-cube"></i> Nexora Tech</div>
+      <div class="client-item"><i class="fas fa-fire"></i> BlazePulse</div>
+      <div class="client-item"><i class="fas fa-gem"></i> Vistora</div>
+      <div class="client-item"><i class="fas fa-rocket"></i> LaunchPad</div>
+      <div class="client-item"><i class="fas fa-wave-square"></i> SoundMesh</div>
+      <div class="client-item"><i class="fas fa-layer-group"></i> Stackly</div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section id="services" class="section-padding">
+    <div class="container">
+      <div data-aos="fade-up">
+        <span class="section-tag"><i class="fas fa-sparkles"></i> What we do</span>
+        <h2 class="section-title">Services built to <span class="gradient-text">scale your brand</span></h2>
+        <p class="section-subtitle">From strategy to execution, we cover every digital touchpoint your business needs to thrive online.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="service-number">01</div>
+          <div class="service-icon service-icon-1"><i class="fas fa-bullhorn"></i></div>
+          <h3 class="service-title">Digital Marketing</h3>
+          <p class="service-desc">Data-driven campaigns across paid, organic, and social channels that bring qualified leads to your door.</p>
+          <div class="service-tags">
+            <span class="service-tag">Google Ads</span>
+            <span class="service-tag">Meta Ads</span>
+            <span class="service-tag">Email</span>
+            <span class="service-tag">Analytics</span>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-number">02</div>
+          <div class="service-icon service-icon-2"><i class="fas fa-code"></i></div>
+          <h3 class="service-title">Web Creation</h3>
+          <p class="service-desc">Beautiful, fast, and conversion-optimised websites that work hard for your business 24/7.</p>
+          <div class="service-tags">
+            <span class="service-tag">Design</span>
+            <span class="service-tag">Development</span>
+            <span class="service-tag">CMS</span>
+            <span class="service-tag">E-commerce</span>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card featured" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-number">03</div>
+          <div class="service-icon service-icon-3"><i class="fas fa-magnifying-glass-chart"></i></div>
+          <h3 class="service-title">SEO Strategy</h3>
+          <p class="service-desc">Long-term organic growth through technical SEO, content strategy, and authority building.</p>
+          <div class="service-tags">
+            <span class="service-tag">Technical SEO</span>
+            <span class="service-tag">Content</span>
+            <span class="service-tag">Link Building</span>
+          </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-number">04</div>
+          <div class="service-icon service-icon-4"><i class="fas fa-film"></i></div>
+          <h3 class="service-title">Motion Design</h3>
+          <p class="service-desc">Scroll-stopping animations, explainer videos, and branded motion content that captivates audiences.</p>
+          <div class="service-tags">
+            <span class="service-tag">Animation</span>
+            <span class="service-tag">Video</span>
+            <span class="service-tag">After Effects</span>
+          </div>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-number">05</div>
+          <div class="service-icon service-icon-5"><i class="fas fa-palette"></i></div>
+          <h3 class="service-title">Brand Identity</h3>
+          <p class="service-desc">Distinctive visual identities that tell your story and create a lasting impression in every market.</p>
+          <div class="service-tags">
+            <span class="service-tag">Logo</span>
+            <span class="service-tag">Visual System</span>
+            <span class="service-tag">Guidelines</span>
+          </div>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-number">06</div>
+          <div class="service-icon service-icon-6"><i class="fas fa-share-nodes"></i></div>
+          <h3 class="service-title">Social Media</h3>
+          <p class="service-desc">Community management, content calendars, and creative campaigns that grow your following and engagement.</p>
+          <div class="service-tags">
+            <span class="service-tag">Instagram</span>
+            <span class="service-tag">LinkedIn</span>
+            <span class="service-tag">TikTok</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section-padding">
+    <div class="container">
+      <div class="about-grid">
+        <!-- Visual -->
+        <div class="about-visual" data-aos="fade-right">
+          <div class="about-lottie-container" style="background:linear-gradient(135deg,rgba(79,110,247,0.1) 0%,rgba(124,58,237,0.08) 100%);border:1px solid rgba(255,255,255,0.08);min-height:280px;display:flex;align-items:center;justify-content:center;">
+            <i class="fas fa-users" style="font-size:6rem;background:var(--gradient-text);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;"></i>
+          </div>
+          <div class="about-stats-grid">
+            <div class="about-stat-card">
+              <div class="about-stat-num" data-count="150" data-suffix="+">150+</div>
+              <div class="about-stat-label">Projects delivered</div>
+            </div>
+            <div class="about-stat-card">
+              <div class="about-stat-num" data-count="8" data-suffix=" yrs">8 yrs</div>
+              <div class="about-stat-label">In the industry</div>
+            </div>
+            <div class="about-stat-card">
+              <div class="about-stat-num" data-count="40" data-suffix="+">40+</div>
+              <div class="about-stat-label">Happy clients</div>
+            </div>
+            <div class="about-stat-card">
+              <div class="about-stat-num" data-count="12" data-suffix="">12</div>
+              <div class="about-stat-label">Team members</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Content -->
+        <div class="about-content" data-aos="fade-left">
+          <span class="section-tag"><i class="fas fa-info-circle"></i> About us</span>
+          <h2 class="section-title">A team obsessed with <span class="gradient-text">your growth</span></h2>
+          <p class="section-subtitle">Founded in 2016, Step To Begin brings together strategists, designers, and engineers who share one goal: making your brand impossible to ignore.</p>
+
+          <ul class="about-list">
+            <li>Strategy-first approach — every project starts with research and clear objectives</li>
+            <li>Transparent reporting with real-time dashboards and monthly reviews</li>
+            <li>Agile delivery with two-week sprints and constant client collaboration</li>
+            <li>Full-service capability — no need to juggle multiple agencies</li>
+          </ul>
+
+          <div class="locations">
+            <div class="location-badge"><i class="fas fa-location-dot"></i> Paris, France</div>
+            <div class="location-badge"><i class="fas fa-location-dot"></i> London, UK</div>
+            <div class="location-badge"><i class="fas fa-globe"></i> Remote worldwide</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROCESS ===== -->
+  <section id="process" class="section-padding">
+    <div class="container">
+      <div style="text-align:center;" data-aos="fade-up">
+        <span class="section-tag"><i class="fas fa-diagram-project"></i> How we work</span>
+        <h2 class="section-title">Our <span class="gradient-text">4-step process</span></h2>
+        <p class="section-subtitle" style="margin:0 auto;">A proven framework that takes you from first brief to measurable results — every time.</p>
+      </div>
+
+      <div class="process-steps">
+        <div class="process-step" data-aos="fade-up" data-aos-delay="0">
+          <div class="step-number-wrap">
+            <div class="step-number">01</div>
+          </div>
+          <h3 class="step-title">Discovery</h3>
+          <p class="step-desc">We dig deep into your market, competitors, and goals to build a solid strategic foundation.</p>
+        </div>
+
+        <div class="process-step" data-aos="fade-up" data-aos-delay="100">
+          <div class="step-number-wrap">
+            <div class="step-number">02</div>
+          </div>
+          <h3 class="step-title">Strategy</h3>
+          <p class="step-desc">We craft a custom roadmap with clear KPIs, channel mix, and creative direction tailored to you.</p>
+        </div>
+
+        <div class="process-step" data-aos="fade-up" data-aos-delay="200">
+          <div class="step-number-wrap">
+            <div class="step-number">03</div>
+          </div>
+          <h3 class="step-title">Execution</h3>
+          <p class="step-desc">Our team brings the strategy to life with pixel-perfect design and high-performance campaigns.</p>
+        </div>
+
+        <div class="process-step" data-aos="fade-up" data-aos-delay="300">
+          <div class="step-number-wrap">
+            <div class="step-number">04</div>
+          </div>
+          <h3 class="step-title">Optimise</h3>
+          <p class="step-desc">We monitor, test, and iterate continuously so your results keep compounding month after month.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PORTFOLIO ===== -->
+  <section id="portfolio" class="section-padding">
+    <div class="container">
+      <div data-aos="fade-up">
+        <span class="section-tag"><i class="fas fa-briefcase"></i> Portfolio</span>
+        <h2 class="section-title">Work we're <span class="gradient-text">proud of</span></h2>
+        <p class="section-subtitle">A selection of projects spanning branding, web, and performance marketing.</p>
+      </div>
+
+      <div class="portfolio-filters" data-aos="fade-up" data-aos-delay="100">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="branding">Branding</button>
+        <button class="filter-btn" data-filter="marketing">Marketing</button>
+        <button class="filter-btn" data-filter="motion">Motion</button>
+      </div>
+
+      <div class="portfolio-grid">
+        <!-- Item 1 -->
+        <div class="portfolio-item" data-category="web" data-aos="zoom-in" data-aos-delay="0">
+          <div class="portfolio-img-container">
+            <div class="portfolio-placeholder">
+              <i class="fas fa-globe" style="color:var(--accent-blue);"></i>
+              <span>Nexora — SaaS Platform</span>
+            </div>
+          </div>
+          <div class="portfolio-overlay">
+            <div class="portfolio-info">
+              <div class="portfolio-category">Web Development</div>
+              <div class="portfolio-name">Nexora Platform</div>
+              <div class="portfolio-client">SaaS · 2024</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="portfolio-item" data-category="branding" data-aos="zoom-in" data-aos-delay="100">
+          <div class="portfolio-img-container">
+            <div class="portfolio-placeholder">
+              <i class="fas fa-palette" style="color:#A855F7;"></i>
+              <span>Vistora — Brand Identity</span>
+            </div>
+          </div>
+          <div class="portfolio-overlay">
+            <div class="portfolio-info">
+              <div class="portfolio-category">Brand Identity</div>
+              <div class="portfolio-name">Vistora Rebrand</div>
+              <div class="portfolio-client">Luxury Retail · 2024</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="portfolio-item" data-category="marketing" data-aos="zoom-in" data-aos-delay="200">
+          <div class="portfolio-img-container">
+            <div class="portfolio-placeholder">
+              <i class="fas fa-chart-line" style="color:var(--accent-cyan);"></i>
+              <span>GreenShift — Growth Campaign</span>
+            </div>
+          </div>
+          <div class="portfolio-overlay">
+            <div class="portfolio-info">
+              <div class="portfolio-category">Digital Marketing</div>
+              <div class="portfolio-name">GreenShift Growth</div>
+              <div class="portfolio-client">E-commerce · 2023</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="portfolio-item" data-category="motion" data-aos="zoom-in" data-aos-delay="0">
+          <div class="portfolio-img-container">
+            <div class="portfolio-placeholder">
+              <i class="fas fa-film" style="color:var(--accent-pink);"></i>
+              <span>BlazePulse — Motion Campaign</span>
+            </div>
+          </div>
+          <div class="portfolio-overlay">
+            <div class="portfolio-info">
+              <div class="portfolio-category">Motion Design</div>
+              <div class="portfolio-name">BlazePulse Launch</div>
+              <div class="portfolio-client">Fintech · 2023</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="portfolio-item" data-category="web" data-aos="zoom-in" data-aos-delay="100">
+          <div class="portfolio-img-container">
+            <div class="portfolio-placeholder">
+              <i class="fas fa-store" style="color:#FBBF24;"></i>
+              <span>Lumina — E-commerce Store</span>
+            </div>
+          </div>
+          <div class="portfolio-overlay">
+            <div class="portfolio-info">
+              <div class="portfolio-category">Web &amp; E-commerce</div>
+              <div class="portfolio-name">Lumina Shop</div>
+              <div class="portfolio-client">Fashion · 2023</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="portfolio-item" data-category="branding" data-aos="zoom-in" data-aos-delay="200">
+          <div class="portfolio-img-container">
+            <div class="portfolio-placeholder">
+              <i class="fas fa-layer-group" style="color:#EC4899;"></i>
+              <span>Stackly — Visual System</span>
+            </div>
+          </div>
+          <div class="portfolio-overlay">
+            <div class="portfolio-info">
+              <div class="portfolio-category">Brand Identity</div>
+              <div class="portfolio-name">Stackly Design System</div>
+              <div class="portfolio-client">Tech startup · 2022</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-cta" data-aos="fade-up">
+        <a href="#contact" class="btn-secondary"><i class="fas fa-eye"></i> Discuss your project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section id="testimonials" class="section-padding">
+    <div class="container">
+      <div style="text-align:center;" data-aos="fade-up">
+        <span class="section-tag"><i class="fas fa-heart"></i> Client stories</span>
+        <h2 class="section-title">Trusted by <span class="gradient-text">founders &amp; CMOs</span></h2>
+        <p class="section-subtitle" style="margin:0 auto;">Don't just take our word for it — here's what our clients have to say.</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card featured" data-aos="fade-up" data-aos-delay="0">
+          <div class="quote-icon">"</div>
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text">Step To Begin completely transformed our online presence. Within 6 months of working together, our organic traffic tripled and our conversion rate doubled. They genuinely feel like an extension of our team.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">SC</div>
+            <div>
+              <div class="author-name">Sophie Carrington</div>
+              <div class="author-role">CMO, Nexora Tech</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="quote-icon">"</div>
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text">The rebrand they delivered exceeded every expectation. Our new identity perfectly captures who we are and has opened doors with premium clients we never reached before.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">ML</div>
+            <div>
+              <div class="author-name">Marc Lefebvre</div>
+              <div class="author-role">Founder, Vistora</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="quote-icon">"</div>
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text">Their paid media team is exceptional. Our ROAS went from 2× to 6× in just three months. The transparency and communication throughout made it a pleasure to work with them.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">AK</div>
+            <div>
+              <div class="author-name">Amina Kowalski</div>
+              <div class="author-role">CEO, GreenShift</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section id="faq" class="section-padding">
+    <div class="container">
+      <div class="faq-grid">
+        <!-- Left: questions -->
+        <div>
+          <div data-aos="fade-right">
+            <span class="section-tag"><i class="fas fa-circle-question"></i> FAQ</span>
+            <h2 class="section-title">Frequently asked <span class="gradient-text">questions</span></h2>
+          </div>
+
+          <div class="faq-list" data-aos="fade-right" data-aos-delay="100">
+            <div class="faq-item open">
+              <div class="faq-question">
+                How long does a typical project take?
+                <div class="faq-icon"><i class="fas fa-plus"></i></div>
+              </div>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">It depends on scope. A website redesign typically takes 4–8 weeks, while a full brand identity project runs 6–10 weeks. We always provide a detailed timeline before we start.</div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                Do you work with small businesses?
+                <div class="faq-icon"><i class="fas fa-plus"></i></div>
+              </div>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">Absolutely. We work with everyone from solo founders to enterprise brands. Our packages are tailored to your budget and growth stage.</div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                What is your pricing model?
+                <div class="faq-icon"><i class="fas fa-plus"></i></div>
+              </div>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">We offer both project-based and monthly retainer pricing. After an initial discovery call we'll propose a custom package that fits your goals and budget.</div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                How do you measure success?
+                <div class="faq-icon"><i class="fas fa-plus"></i></div>
+              </div>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">We define KPIs together at the start of each engagement — traffic, leads, conversions, ROAS, etc. — and report on them monthly through a live dashboard.</div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                Can you take over an existing project?
+                <div class="faq-icon"><i class="fas fa-plus"></i></div>
+              </div>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">Yes! We're comfortable taking over websites, ad accounts, or ongoing campaigns from other agencies. We start with a thorough audit before making any changes.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: visual CTA card -->
+        <div class="faq-visual" data-aos="fade-left">
+          <div style="background:linear-gradient(135deg,rgba(79,110,247,0.12) 0%,rgba(124,58,237,0.08) 100%);border:1px solid rgba(79,110,247,0.25);border-radius:28px;padding:48px 40px;text-align:center;">
+            <div style="width:72px;height:72px;background:var(--gradient-main);border-radius:20px;display:flex;align-items:center;justify-content:center;margin:0 auto 24px;font-size:2rem;">
+              <i class="fas fa-comments" style="color:white;"></i>
+            </div>
+            <h3 style="font-size:1.4rem;font-weight:800;margin-bottom:12px;">Still have questions?</h3>
+            <p style="color:var(--text-secondary);font-size:0.9rem;line-height:1.7;margin-bottom:28px;">Can't find the answer you're looking for? Chat with our team — we reply within 24 hours.</p>
+            <a href="#contact" class="btn-primary" style="justify-content:center;width:100%;">
+              <i class="fas fa-paper-plane"></i> Send us a message
+            </a>
+            <div style="display:flex;align-items:center;justify-content:center;gap:10px;margin-top:20px;font-size:0.8rem;color:var(--text-muted);">
+              <i class="fas fa-clock" style="color:var(--accent-cyan);"></i>
+              Average reply time: under 4 hours
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section-padding">
+    <div class="container">
+      <div data-aos="fade-up">
+        <span class="section-tag"><i class="fas fa-envelope"></i> Contact</span>
+        <h2 class="section-title">Let's build something <span class="gradient-text">great together</span></h2>
+        <p class="section-subtitle">Drop us a message and we'll get back to you within 24 hours to discuss your project.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Info cards -->
+        <div class="contact-info">
+          <div class="contact-card" data-aos="fade-right" data-aos-delay="0">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <div class="contact-card-title">Email</div>
+              <div class="contact-card-value">hello@steptobegin.com</div>
+              <div class="contact-card-sub">We reply within 24 hours</div>
+            </div>
+          </div>
+
+          <div class="contact-card" data-aos="fade-right" data-aos-delay="100">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <div class="contact-card-title">Phone</div>
+              <div class="contact-card-value">+33 1 23 45 67 89</div>
+              <div class="contact-card-sub">Mon–Fri, 9am–6pm CET</div>
+            </div>
+          </div>
+
+          <div class="contact-card" data-aos="fade-right" data-aos-delay="200">
+            <div class="contact-icon"><i class="fas fa-location-dot"></i></div>
+            <div>
+              <div class="contact-card-title">Office</div>
+              <div class="contact-card-value">12 Rue de Rivoli, Paris</div>
+              <div class="contact-card-sub">Also remote worldwide</div>
+            </div>
+          </div>
+
+          <div data-aos="fade-right" data-aos-delay="300">
+            <div style="font-size:0.8rem;color:var(--text-muted);margin-bottom:12px;text-transform:uppercase;letter-spacing:0.5px;">Follow us</div>
+            <div class="contact-social">
+              <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social-link" aria-label="Twitter/X"><i class="fab fa-x-twitter"></i></a>
+              <a href="#" class="social-link" aria-label="Behance"><i class="fab fa-behance"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="contact-form-wrap" data-aos="fade-left">
+          <h3 class="form-title">Send a message</h3>
+          <p class="form-subtitle">Tell us about your project and we'll come back with a tailored proposal.</p>
+
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="firstName">First name</label>
+                <input class="form-input" type="text" id="firstName" name="firstName" placeholder="Marie" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="lastName">Last name</label>
+                <input class="form-input" type="text" id="lastName" name="lastName" placeholder="Dupont" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="email">Email address</label>
+              <input class="form-input" type="email" id="email" name="email" placeholder="marie@company.com" required />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="service">Service interested in</label>
+              <select class="form-select" id="service" name="service">
+                <option value="">Select a service…</option>
+                <option value="digital-marketing">Digital Marketing</option>
+                <option value="web">Web Creation</option>
+                <option value="seo">SEO Strategy</option>
+                <option value="motion">Motion Design</option>
+                <option value="branding">Brand Identity</option>
+                <option value="social">Social Media</option>
+                <option value="other">Other / Not sure yet</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="message">Your message</label>
+              <textarea class="form-textarea" id="message" name="message" placeholder="Tell us about your project, timeline, and goals…" required></textarea>
+            </div>
+
+            <button type="submit" class="form-submit">
+              <i class="fas fa-paper-plane"></i> Send message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section id="cta">
+    <div class="container">
+      <div class="cta-inner" data-aos="zoom-in">
+        <h2 class="cta-title">Ready to <span class="gradient-text">step up?</span></h2>
+        <p class="cta-subtitle">Book a free 30-minute strategy call. No commitment, no pressure — just fresh ideas for your brand.</p>
+        <div class="cta-actions">
+          <a href="#contact" class="btn-primary"><i class="fas fa-calendar-check"></i> Book a free call</a>
+          <a href="mailto:hello@steptobegin.com" class="btn-secondary"><i class="fas fa-envelope"></i> hello@steptobegin.com</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand col -->
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="footer-logo-icon">S</div>
+            <span class="footer-logo-text gradient-text">StepToBegin</span>
+          </div>
+          <p class="footer-desc">A full-service digital agency helping ambitious brands grow through strategy, design, and technology.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="Twitter/X"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" class="social-link" aria-label="Behance"><i class="fab fa-behance"></i></a>
+          </div>
+        </div>
+
+        <!-- Services col -->
+        <div>
+          <div class="footer-col-title">Services</div>
+          <ul class="footer-links">
+            <li><a href="#services">Digital Marketing</a></li>
+            <li><a href="#services">Web Creation</a></li>
+            <li><a href="#services">SEO Strategy</a></li>
+            <li><a href="#services">Motion Design</a></li>
+            <li><a href="#services">Brand Identity</a></li>
+            <li><a href="#services">Social Media</a></li>
+          </ul>
+        </div>
+
+        <!-- Company col -->
+        <div>
+          <div class="footer-col-title">Company</div>
+          <ul class="footer-links">
+            <li><a href="#about">About us</a></li>
+            <li><a href="#process">Our process</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Legal col -->
+        <div>
+          <div class="footer-col-title">Legal</div>
+          <ul class="footer-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+            <li><a href="#">Legal Notice</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2026 StepToBegin. All rights reserved.</p>
+        <p class="footer-tagline">Made with <span>&#10084;</span> in Paris &amp; London</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
